@@ -29,7 +29,7 @@ names(X_test) = features
 X_test = X_test[,extract.features]
 
 # Load activity labels
-y_test[,2] = activity.labels[Y_test[,1]]
+Y_test[,2] = activity.labels[Y_test[,1]]
 names(Y_test) = c("Activity.ID", "Activity.Label")
 names(subject_test) = "subject"
 
